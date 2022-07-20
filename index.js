@@ -1,12 +1,16 @@
 // Code your solution in this file!
-const drivers = ["Sally", "Bob", "Freddy", "Claudia"];
+const drivers = ["Sally", "Bob", "Freddy", "Claudia", "John"];
 
 const returnFirstTwoDrivers = function () {
-  console.log([drivers[0] + drivers[1]]);
+  // console.log("hello" + "goodbye")
+
+  // console.log([drivers[0], drivers[1]]);
+  //return [drivers[0], drivers[1]]
+  return drivers.slice(0, 2)
 };
 
 const returnLastTwoDrivers = function (drivers) {
-  console.log([drivers[2], drivers[3]]);
+  return drivers.slice(-2)
 };
 
 function selectingDrivers() {
